@@ -1,4 +1,3 @@
-
 # 🏏 AuctionEdge
 
 > Real-time AI co-pilot for IPL auctions — track 10 franchises live, get instant BID / SHILL / PASS decisions, and always know exactly how much to spend.
@@ -33,8 +32,8 @@
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_USERNAME/auctionedge.git
-cd auctionedge
+git clone https://github.com/Vishak24/AuctionEdge.git
+cd AuctionEdge
 
 # Create a virtual environment
 python3.11 -m venv .venv
@@ -54,16 +53,16 @@ Open your browser at `http://localhost:8501`
 ## 📁 Project Structure
 
 ```
-auctionedge/
-├── app.py                  # Main Streamlit app
+AuctionEdge/
+├── app.py # Main Streamlit app
 ├── requirements.txt
 └── engine/
-    ├── __init__.py
-    ├── players.py           # Full player database (name, role, country, base, pts)
-    ├── team.py              # Team class, budget constants, squad logic
-    ├── estimator.py         # Market price estimator + smart max bid engine
-    ├── decision.py          # BID / SHILL / PASS decision engine
-    └── optimizer.py         # Target recommender + Best XI optimizer
+├── __init__.py
+├── players.py # Full player database (name, role, country, base, pts)
+├── team.py # Team class, budget constants, squad logic
+├── estimator.py # Market price estimator + smart max bid engine
+├── decision.py # BID / SHILL / PASS decision engine
+└── optimizer.py # Target recommender + Best XI optimizer
 ```
 
 ---
@@ -81,9 +80,9 @@ Triggers when the player is overpriced relative to your max bid, you've hit the 
 
 ### Smart Max Bid Formula
 ```
-free_budget  = my_budget − mandatory_reserve − floor_reserve
-budget_max   = free_budget × 0.50 × urgency × (pts / 42)
-max_bid      = min(budget_max, 1.5 × est_price, 0.6 × richest_rival_budget)
+free_budget = my_budget − mandatory_reserve − floor_reserve
+budget_max = free_budget × 0.50 × urgency × (pts / 42)
+max_bid = min(budget_max, 1.5 × est_price, 0.6 × richest_rival_budget)
 ```
 
 ---
@@ -123,7 +122,7 @@ plotly
 
 **Vishal Ganesan**
 Electronics & Communication Engineering, SRM Institute of Science and Technology
-[GitHub](https://github.com/YOUR_USERNAME) · [LinkedIn](https://linkedin.com/in/YOUR_PROFILE)
+[GitHub](https://github.com/Vishak24) · [LinkedIn](https://linkedin.com/in/vishalg24)
 
 ---
 
@@ -134,8 +133,4 @@ MIT License — free to use, modify, and distribute.
 ---
 
 > *Built in 48 hours for a live IPL mock auction. AuctionEdge was the only team with a real-time AI co-pilot.* 🏏🔥
-```
 
-***
-
-Save this as `README.md` in your `auctionedge/` root folder. When you push to GitHub it'll render automatically with all the badges, code blocks, and sections. Just replace `YOUR_USERNAME` and `YOUR_PROFILE` with your actual GitHub and LinkedIn handles. 🔥
